@@ -7,8 +7,63 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+// Chapter 6, Programming Challenge 2
+#include <iostream>
+using namespace std;
+
+// Write the prototypes for the getLength,
+// getWidth, getArea, and displayData
+// functions here.
+
+double getLength();
+double getWidth();
+double getArea();
+void displayData(double, double, double);
+
+int main()
+{
+   double length,    // The rectangle's length
+          width,     // The rectangle's width
+          area;      // The rectangle's area
+          
+   // Get the rectangle's length.
+   length = getLength();
+   
+   // Get the rectangle's width.
+   width = getWidth();
+   
+   // Get the rectangle's area.
+   area = getArea();
+   
+   // Display the rectangle's data.
+   displayData(length, width, area);
+          
+   return 0;
+}
+
+//***************************************************
+// You must write the getLength, getWidth, getArea, *
+// and displayData functions.                       *
+//***************************************************
+
+double getLength() {
+    double length;
+    cout << "Enter the length: ";
+    cin >> length;
+    return length;
+}
+
+double getWidth() {
+    double length;
+    cout << "Enter the length: ";
+    cin >> length;
+    return length;
+}
+
+double getArea() {
+    return 0.0;
+}
+
+void displayData(double length, double width, double area) {
+    
 }
